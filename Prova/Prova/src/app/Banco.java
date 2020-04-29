@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Banco {
 
     private String nome_banco;
-    private ArrayList<ContaConrrente> contas;
+    private ArrayList<ContaCorrente> contas;
 
     public Banco (String nome){
         this.nome_banco = nome;

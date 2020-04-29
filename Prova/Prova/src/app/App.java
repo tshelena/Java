@@ -15,8 +15,6 @@ public class App {
         4  sacar \n
         5  imprimir contas correntes \n");*/
 
-
-
         Scanner sc = new Scanner(System.in);
         Banco bank = new Banco("Banco");
 

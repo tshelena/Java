@@ -5,12 +5,12 @@ public class ContaCorrente {
     private String numero_da_conta;
     private Cliente cliente;
     private Double saldo;
-
+    
     public ContaCorrente (String numero_da_agencia, String numero_da_conta, Cliente cliente){
         this.numero_da_agencia = numero_da_agencia;
         this.numero_da_conta = numero_da_conta;
         this.cliente = cliente;
-        this.saldo = 0.00;
+        this.saldo = 0.0;
     }
 
     public String getNumero_da_agencia()
@@ -23,13 +23,13 @@ public class ContaCorrente {
         return this.numero_da_conta;
     }
     
-    public String getSaldo()
+    public Double getSaldo()
     {
         return this.saldo;
     }
 
     protected Boolean saca(Double valor){
-    if (valor > this.getSaldo()){
+    if (valor > this.saldo){
     return false;
     }
     else
@@ -39,7 +39,7 @@ public class ContaCorrente {
 
     protected Boolean deposita(Double valor){
     if (valor >=0){
-        this.saldo = (this.getSaldo() + valor);
+        this.saldo += valor;
         return true;
     }
     else{
@@ -49,9 +49,9 @@ public class ContaCorrente {
     
     public String toString(){
         return this.cliente.toString() +
-            "Agencia: " + this.numero_da_agencia "\n" +
-            "Conta: " + this.numero_da_conta "\n" +
-            "Saldo: " + this.saldo;
+            "Agencia: " + this.numero_da_agencia  +
+            "\nConta: " + this.numero_da_conta  +
+            "\nSaldo: " + this.saldo;
     }
  }
 
