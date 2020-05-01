@@ -11,7 +11,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         Banco bank = new Banco("Banco");
 
-        while (acao != 9) {
+        while (acao != 0) {
             System.out.println( "1 - adicionar conta corrente \n" 
             + "2 - remover conta corrente \n" 
             + "3 - depositar \n"
@@ -62,7 +62,7 @@ public class App {
             
             case 6:
             System.out.println("bye");
-            acao = 6;
+            acao = 0;
             sc.close();
             break;
         }
