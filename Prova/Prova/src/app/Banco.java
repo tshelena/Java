@@ -1,4 +1,4 @@
-package app;
+package classes;
 import java.util.ArrayList;
 
 public class Banco {

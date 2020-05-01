@@ -1,4 +1,4 @@
-package app;
+package classes;
 
 public class ContaCorrente {
     private String numero_da_agencia;

@@ -1,4 +1,4 @@
-package app;
+package classes;
 
 public class Cliente {
     private String nome_do_cliente;
