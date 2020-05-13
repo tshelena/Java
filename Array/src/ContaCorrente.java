@@ -1,4 +1,3 @@
-package app;
 
 public class ContaCorrente {
     private double saldo;

@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Prova_f878f899"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

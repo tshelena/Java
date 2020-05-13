@@ -51,7 +51,7 @@ public class ContaCorrente {
         return this.cliente.toString() +
             "Agencia: " + this.numero_da_agencia  +
             "\nConta: " + this.numero_da_conta  +
-            "\nSaldo: " + this.saldo;
+            "\nSaldo: " + this.saldo + "\n";
     }
  }
 

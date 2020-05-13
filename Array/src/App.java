@@ -1,4 +1,3 @@
-package app;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,7 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        /*ArrayList<ContaCorrente> contas = new ArrayList<ContaCorrente>();
+        ArrayList<ContaCorrente> contas = new ArrayList<ContaCorrente>();
         ContaCorrente guilherme = new ContaCorrente(1000);
         ContaCorrente matheus = new ContaCorrente(500);
         contas.add(guilherme);
@@ -14,7 +13,7 @@ public class App {
         contas.add(new ContaCorrente(9999));
         System.out.println(contas.size());
         
-        contas.forEach((conta) -> System.out.println(conta.getSaldo()));*/
+        contas.forEach((conta) -> System.out.println(conta.getSaldo()));
 
         Scanner inteiro = new Scanner(System.in);
         System.out.print("Digite a quantidade de Contas Correntes que serão criadas: ");

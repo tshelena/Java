@@ -4,14 +4,14 @@ public class Cliente {
     private String nome_do_cliente;
     private String cpf;
     private String email;
-
-                         
+    
     public Cliente(String nome_do_cliente, String email) {
         this.nome_do_cliente = nome_do_cliente;
         this.email = email;
+        
     }
        
-    public String getNome_do_cliente() {
+       public String getNome_do_cliente() {
         return this.nome_do_cliente;
     }
    
@@ -32,8 +32,8 @@ public class Cliente {
     }
     
     public String toString(){
-    return "nome cliente: " + this.nome_do_cliente + "\n" +
+    return "\nnome cliente: " + this.nome_do_cliente + "\n" +
             "email: " + this.email + "\n" + 
-            "CPF: " + this.cpf;         
+            "CPF: " + this.cpf + "\n";         
         }
     }
