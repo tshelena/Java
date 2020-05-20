@@ -21,6 +21,6 @@ animal01.som();
 animal02.som();
 animal03.som();
 
-        System.out.println("Hello, World!");
+        
     }
 }

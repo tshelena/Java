@@ -1,9 +1,9 @@
 package classes;
 
 public class Moto extends Veiculo {
-    private boolean exigeCapacete;
-    private String maneabilidade;
-    private boolean travada;
+    /*private boolean exigeCapacete;
+    private String maneabilidade;*/
+        private boolean travada;
 
     public Moto (String marca) {
         super(marca);
@@ -21,6 +21,12 @@ public class Moto extends Veiculo {
 
     public void destravar () {
         this.travada = false;
+    }
+    
+    @Override
+    public void som()
+    {
+        System.out.println("som moto");
     }
 
     @Override

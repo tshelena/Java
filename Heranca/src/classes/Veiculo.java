@@ -3,9 +3,9 @@ package classes;
 public class Veiculo {
 
     private String marca;
-    private String nome;
+    /*private String nome;
     private double valor;
-    private double consumo;
+    private double consumo;*/
     private boolean ligado;
 
     public Veiculo (String marca) {
@@ -20,7 +20,10 @@ public class Veiculo {
     public void desligar() {
         this.ligado = false;
     }
-
+    
+    public void som(){};
+    
+    
     @Override
     public String toString() {
         return "Marca: " + this.marca + " Está ligada: " + this.ligado;
