@@ -3,20 +3,20 @@ import java.util.ArrayList;
 
 public class Agenda {
     
-    ArrayList<Contato> contatos = new ArrayList<Contato>();
+    protected static ArrayList<Contato> contatos = new ArrayList<Contato>();
 
     public ArrayList<Contato> getContatos() {
         return this.contatos;
     }
 
-    public static void adicionaContato(Contato contato) {
-        if (contato.comunicavel()) {
+    public void adicionaContato(Contato contato) {
+        /*if (contato.comunicavel()) {*/
             this.contatos.add(contato);
-        }
+     
     }
 
-    public void removeContatoNome(Contato nome) {
-            this.contatos.remove(nome);
+    public void removeContato(Contato contato) {
+            this.contatos.remove(contato);
         }
 
         /*public void removeContatoCodg(Contato codigo){

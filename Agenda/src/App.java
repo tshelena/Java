@@ -1,7 +1,5 @@
 import classes.*;
 
-import static java.lang.System.out;
-
 import java.util.Scanner;
 
 public class App extends Agenda {
@@ -36,7 +34,7 @@ public class App extends Agenda {
                     System.out.println("Digite o numero do telefone do contato");
                     final int telefone = sc.nextInt();
                     final Contato contato = new Contato(nome, email, telefone);
-                    Agenda.adicionaContato(contato);
+                    agenda.adicionaContato(contato);
                     break;
 
                 // remove contato
@@ -58,6 +56,7 @@ public class App extends Agenda {
                      * String telefone = sc.nextLine(); agenda.removeContatoTel(contato); break;
                      * 
                      */
+                    break;
                 case 3:
                     System.out.println("\n 4 - remover todos:");
 

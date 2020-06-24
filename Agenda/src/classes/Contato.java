@@ -47,7 +47,7 @@ public class Contato implements Comunicavel{
 
     @Override
     public String toString(){
-        return "Nome: " + this.nome + "\n" +
+        return "\n" + "Nome: " + this.nome + "\n" +
         " E-mail: " + this.email + "\n" + 
         " Telefone: " + this.telefone + "\n" ;
     }
