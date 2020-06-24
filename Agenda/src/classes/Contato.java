@@ -1,72 +1,47 @@
 package classes;
 
-
-/*extende pessoa fisica e pessoa juridica*/
-public abstract class Contato implements Comunicavel{
+public class Contato implements Comunicavel{
 
     private String nome; 
     private String email;
     /*private int codigo;*/
-    private int cpf;
-    private int cnpj;
     private int telefone;
     
     
-    public Contato (String nome, String email, int cpf, int cnpj, int telefone){
+    public Contato (final String nome, final String email, final int telefone) {
         this.nome = nome;
         this.email = email;
-        this.cpf = cpf;
-        this.cnpj = cnpj;
         this.telefone = telefone;
-        
-    }
-    
 
-	public String getNome() {
+    }
+
+    public String getNome() {
         return this.nome;
     }
-    
-    public void setNome(String nome) {
+
+    public void setNome(final String nome) {
         this.nome = nome;
     }
-        
+
     public String getEmail() {
         return this.email;
     }
-    
-    public void setEmail(String email) {
+
+    public void setEmail(final String email) {
         this.email = email;
     }
-    
-    /*public int getCodigo() {
-        return codigo;
-    }
-    
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }    
-    */
-    public int getCpf() {
-        return this.cpf;
-    }
-    
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
-    
-    public int getCnpj(){
-        return this.cnpj;
-    }
 
-    public void setCnpj(int cnpj) {
-        this.cnpj = cnpj;
-    }
+    /*
+     * public int getCodigo() { return codigo; }
+     * 
+     * public void setCodigo(int codigo) { this.codigo = codigo; }
+     */
 
     public int getTelefone() {
         return this.telefone;
     }
-    
-    public void setTelefone(int telefone) {
+
+    public void setTelefone(final int telefone) {
        this.telefone = telefone;
     }
 
@@ -74,7 +49,12 @@ public abstract class Contato implements Comunicavel{
     public String toString(){
         return "Nome: " + this.nome + "\n" +
         " E-mail: " + this.email + "\n" + 
-        " CPF: " + this.cpf + "\n" +
         " Telefone: " + this.telefone + "\n" ;
+    }
+
+    @Override
+    public boolean comunicavel() {
+        // TODO Auto-generated method stub
+        return false;
     }
 }

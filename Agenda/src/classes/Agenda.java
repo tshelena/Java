@@ -3,21 +3,20 @@ import java.util.ArrayList;
 
 public class Agenda {
     
-    
-    static ArrayList<Contato> contatos = new ArrayList<Contato>();
+    ArrayList<Contato> contatos = new ArrayList<Contato>();
 
     public ArrayList<Contato> getContatos() {
-        return Agenda.contatos;
+        return this.contatos;
     }
 
     public static void adicionaContato(Contato contato) {
         if (contato.comunicavel()) {
-            contatos.add(contato);
-            }
+            this.contatos.add(contato);
         }
-    
-        public void removeContatoNome(Contato nome){
-            Agenda.contatos.remove(nome);
+    }
+
+    public void removeContatoNome(Contato nome) {
+            this.contatos.remove(nome);
         }
 
         /*public void removeContatoCodg(Contato codigo){
@@ -29,7 +28,7 @@ public class Agenda {
         }
         */
         public void removeTodos() {
-            Agenda.contatos.clear();
+            this.contatos.clear();
         } 
         public Integer totalDeContatos(){
             return contatos.size();
@@ -38,7 +37,7 @@ public class Agenda {
 
         @Override
         public String toString(){
-            return Agenda.contatos + "\n";
+            return this.contatos + "\n" ;
         }
     
     }

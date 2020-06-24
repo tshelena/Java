@@ -1,11 +1,10 @@
 package classes;
 
-
 public class PessoaFisica extends Contato {
 
-    private int cpf;
+    private final int cpf;
 
-    public PessoaFisica(String nome, String email, int telefone, int cpf){
+    public PessoaFisica(final String nome, final String email, final int telefone, final int cpf) {
         super(nome, email, telefone);
         this.cpf = cpf;
     }
