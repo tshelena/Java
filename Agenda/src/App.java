@@ -2,11 +2,11 @@ import classes.*;
 import java.util.Scanner;
 
     public class App {
-        public static void main(String[] args) throws Exception {   
+        public static void main(final String[] args) throws Exception {   
             
-            Scanner sc = new Scanner(System.in);
+            final Scanner sc = new Scanner(System.in);
         
-            Agenda agenda = new Agenda();
+            final Agenda agenda = new Agenda();
     
             Boolean continua = true;
                 
@@ -24,15 +24,15 @@ import java.util.Scanner;
                 case 1: 
                     sc.nextLine();
                     System.out.println("Digite o nome do contato:");
-                    String nome = sc.nextLine();
+                    final String nome = sc.nextLine();
                     System.out.println("Digite o email do contato:");
-                    String email = sc.nextLine();
+                    final String email = sc.nextLine();
                     System.out.println("Digite o cpf do contato:");
-                    int cpf = sc.nextInt();
+                    final int cpf = sc.nextInt();
                     System.out.println("Digite o numero do telefone do contato");
-                    int telefone = sc.nextInt();
-                    Contato contato = new Contato(nome, email, cpf, telefone);
-                    agenda.adicionaContato(contato);
+                    final int telefone = sc.nextInt();
+                    final Contato contato = new Contato(nome, email, cpf, telefone);
+                    Agenda.adicionaContato(contato);
                 break;
     
                 /*case 2:

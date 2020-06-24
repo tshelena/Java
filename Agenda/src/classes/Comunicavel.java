@@ -1,7 +1,8 @@
 package classes;
 
-public interface Comunicavel {
+interface Comunicavel {
     
    public boolean comunicavel();
 
 }
+

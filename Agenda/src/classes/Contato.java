@@ -1,33 +1,28 @@
 package classes;
 
-import java.util.ArrayList;
 
 /*extende pessoa fisica e pessoa juridica*/
-    public class Contato {
+public abstract class Contato implements Comunicavel{
 
     private String nome; 
     private String email;
-    private int codigo;
+    /*private int codigo;*/
     private int cpf;
+    private int cnpj;
     private int telefone;
     
-    public Contato(String nome){
-        this.nome = nome;
-    }
     
-    public Contato (String nome, String email){
-        this.nome = nome;
-        this.email = email;
-    }
-    
-    public Contato (String nome, String email, int cpf, int telefone){
+    public Contato (String nome, String email, int cpf, int cnpj, int telefone){
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
+        this.cnpj = cnpj;
         this.telefone = telefone;
+        
     }
     
-    public String getNome() {
+
+	public String getNome() {
         return this.nome;
     }
     
@@ -42,13 +37,15 @@ import java.util.ArrayList;
     public void setEmail(String email) {
         this.email = email;
     }
-    public int getCodigo() {
+    
+    /*public int getCodigo() {
         return codigo;
     }
     
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }    
+    */
     public int getCpf() {
         return this.cpf;
     }
@@ -57,6 +54,14 @@ import java.util.ArrayList;
         this.cpf = cpf;
     }
     
+    public int getCnpj(){
+        return this.cnpj;
+    }
+
+    public void setCnpj(int cnpj) {
+        this.cnpj = cnpj;
+    }
+
     public int getTelefone() {
         return this.telefone;
     }
