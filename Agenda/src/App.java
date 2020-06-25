@@ -74,7 +74,7 @@ public class App extends Agenda {
                 break;
 
                 case 5:
-                nome = sc.nextLine();
+                    nome = sc.nextLine();
                     agenda.pesquisaPorNome(nome);
                     System.out.println (agenda.lista);
                 case 0:
