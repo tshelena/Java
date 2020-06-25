@@ -13,9 +13,4 @@ public class PessoaJuridica extends Contato {
         return this.cnpj;
     }
 
-    @Override
-    public boolean comunicavel() {
-        // TODO Auto-generated method stub
-        return false;
-    }
 }

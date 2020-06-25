@@ -5,7 +5,7 @@ public class Contato implements Comunicavel{
     private String nome; 
     private String email;
     /*private int codigo;*/
-    private int telefone;
+    private Integer telefone;
     
     
     public Contato (final String nome, final String email, final int telefone) {
@@ -54,7 +54,9 @@ public class Contato implements Comunicavel{
 
     @Override
     public boolean comunicavel() {
-        // TODO Auto-generated method stub
-        return false;
+        return telefone != null;
     }
+
+	public void add(Contato contato) {
+	}
 }

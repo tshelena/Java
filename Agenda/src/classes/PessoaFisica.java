@@ -12,9 +12,5 @@ public class PessoaFisica extends Contato {
         return this.cpf;
     }
 
-    @Override
-    public boolean comunicavel() {
-        // TODO Auto-generated method stub
-        return false;
-    }
+    
 }
