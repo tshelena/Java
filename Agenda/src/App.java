@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class App extends Agenda {
 
-    public static void main(String[] args) throws Exception {
+    public static void main( String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
 
@@ -18,7 +18,6 @@ public class App extends Agenda {
             System.out.println("2 - Remover Contato");
             System.out.println("3 - Remover Todos");
             System.out.println("4 - Imprimir Contatos");
-            System.out.println("5 - Pesquisar Contato");
             System.out.println("0 - Encerrar");
 
             switch (sc.nextInt()) {
@@ -34,30 +33,15 @@ public class App extends Agenda {
                      * System.out.println("Digite o cpf do contato:"); final int cpf = sc.nextInt();
                      */
                     System.out.println("Digite o numero do telefone do contato");
-                    int telefone = sc.nextInt();
+                    String telefone = sc.toString();
                     Contato contato = new Contato(nome, email, telefone);
                     agenda.adicionaContato(contato);
                     break;
 
                 // remove contato
                 case 2:
-                    /*System.out.println("\nEscolha como voce quer remover o contato:");
-                    System.out.println("\n 1 - pelo nome:");
-                    System.out.println("\n 2 - pelo codigo:");
-                    System.out.println("\n 3 - pelo telefone:");
-                    System.out.println("\n 4 - remover todos");
-                    switch (sc.nextInt()){ case 1 : sc.nextLine();
-                    System.out.println("Digite o nome do contato:"); String nome = sc.nextLine();
-                    agenda.removeContatoNome(contato); break;
-                     
-                    case 2: sc.netxLine(); System.out.println("Digite o codigo do contato:");
-                    String codigo = sc.nextLine(); agenda.removeContatoCod(contato); break;
-                     
-                    case 3: sc.netxLine(); System.out.println("Digite o telefone do contato:");
-                    String telefone = sc.nextLine(); agenda.removeContatoTel(contato); break;
-                    */
                     System.out.println("Digite o nome do contato:");
-                    String name = sc.nextLine();
+                    String name = sc.toString();
                     agenda.removeContato(name);
                     System.out.println("Contato removido");
                     break;
@@ -72,11 +56,7 @@ public class App extends Agenda {
                     System.out.println(contatos.toString());
                 
                 break;
-
-                case 5:
-                    nome = sc.nextLine();
-                    agenda.pesquisaPorNome(nome);
-                    System.out.println (agenda.lista);
+                
                 case 0:
                     sc.close();
                     continua = false;

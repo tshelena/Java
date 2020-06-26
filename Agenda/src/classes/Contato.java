@@ -4,11 +4,10 @@ public class Contato implements Comunicavel{
 
     private String nome; 
     private String email;
-    /*private int codigo;*/
-    private Integer telefone;
+    private String telefone;
     
     
-    public Contato (final String nome, final String email, final int telefone) {
+    public Contato (String nome, String email, String telefone) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
@@ -19,7 +18,7 @@ public class Contato implements Comunicavel{
         return this.nome;
     }
 
-    public void setNome(final String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -27,21 +26,15 @@ public class Contato implements Comunicavel{
         return this.email;
     }
 
-    public void setEmail(final String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    /*
-     * public int getCodigo() { return codigo; }
-     * 
-     * public void setCodigo(int codigo) { this.codigo = codigo; }
-     */
-
-    public int getTelefone() {
+    public String getTelefone() {
         return this.telefone;
     }
 
-    public void setTelefone(final int telefone) {
+    public void setTelefone(String telefone) {
        this.telefone = telefone;
     }
 
